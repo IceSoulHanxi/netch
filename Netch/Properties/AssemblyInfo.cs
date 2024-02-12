@@ -13,7 +13,7 @@ using Netch.Controllers;
 [assembly: AssemblyCopyright(UpdateChecker.Copyright)]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
+[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows8.1")]
 [assembly: Fody.ConfigureAwait(false)]
 
 // 将 ComVisible 设置为 false 会使此程序集中的类型
@@ -24,7 +24,7 @@ using Netch.Controllers;
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
 [assembly: Guid("4b041b91-5790-4571-8c58-c63ffe4bc9f8")]
 
-// 程序集的版本信息由下列四个值组成: 
+// 程序集的版本信息由下列四个值组成:
 //
 //      主版本
 //      次版本
