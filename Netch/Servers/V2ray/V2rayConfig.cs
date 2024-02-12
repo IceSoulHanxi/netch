@@ -89,8 +89,6 @@ public class ShadowsocksServerItem
     public string method { get; set; }
 
     public string password { get; set; }
-
-    public string flow { get; set; }
  }
 
 public class Mux

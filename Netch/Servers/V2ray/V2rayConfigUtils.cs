@@ -84,7 +84,7 @@ public static class V2rayConfigUtils
                             new User
                             {
                                 id = getUUID(vless.UserID),
-                                flow = vless.TLSSecureType == "xtls" ? "xtls-rprx-direct" : "",
+                                flow = vless.Flow.ValueOrDefault(),
                                 encryption = vless.EncryptMethod
                             }
                         }
@@ -157,7 +157,7 @@ public static class V2rayConfigUtils
                 };
                 outbound.settings.plugin = ss.Plugin ?? "";
                 outbound.settings.pluginOpts = ss.PluginOption ?? "";
-                
+
                 if (Global.Settings.V2RayConfig.TCPFastOpen)
                 {
                     outbound.streamSettings = new StreamSettings
@@ -277,7 +277,7 @@ public static class V2rayConfigUtils
                 outbound.settings.password = ssh.Password;
                 outbound.settings.privateKey = ssh.PrivateKey;
                 outbound.settings.publicKey = ssh.PublicKey;
-                
+
                 if (Global.Settings.V2RayConfig.TCPFastOpen)
                 {
                     outbound.streamSettings = new StreamSettings
@@ -289,6 +289,7 @@ public static class V2rayConfigUtils
                     };
                 }
                 break;
+
         }
 
         return outbound;
