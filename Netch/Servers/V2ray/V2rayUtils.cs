@@ -55,8 +55,8 @@ public static class V2rayUtils
             if (server.TLSSecureType != "none")
             {
                 server.ServerName = parameter.Get("sni") ?? "";
-                if (server.TLSSecureType == "xtls")
-                    ((VLESSServer)server).Flow = "xtls-rprx-direct"; // splice doesn't support Windows
+                if (server is VLESSServer)
+                    ((VLESSServer)server).Flow = parameter.Get("flow") ?? "";
             }
         }
 

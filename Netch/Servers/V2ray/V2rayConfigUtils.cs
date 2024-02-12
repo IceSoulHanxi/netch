@@ -211,7 +211,7 @@ public static class V2rayConfigUtils
                         port = server.Port,
                         method = "",
                         password = trojan.Password,
-                        flow = trojan.TLSSecureType == "xtls" ? "xtls-rprx-direct" : ""
+//                        flow = trojan.TLSSecureType == "xtls" ? "xtls-rprx-direct" : ""
                     }
                 };
 
